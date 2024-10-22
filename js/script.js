@@ -20,8 +20,10 @@ button.addEventListener('click',function(){
     //controlliamo se la "lampadina è accesa"
     if(lampFlag){//se lampadina è accesa, al click
         lampFlag = false; //allora la spegniamo
+        lamp.src = "../img/white_lamp.png";//cambiamo immagine mettendo quella spenta
     }else{ // altriementi se è spenta, al click
         lampFlag = true; //la accendiamo
+        lamp.src = "../img/yellow_lamp.png";//cambiamo immagine mettendo quella accesa
     }
     
 })
