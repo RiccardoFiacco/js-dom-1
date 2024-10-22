@@ -3,17 +3,24 @@ const button = document.getElementById("switch");
 console.log(lamp, button);
 
 button.addEventListener('click',function(){
-    if(lamp.src ==="http://127.0.0.1:5501/img/yellow_lamp.png"){
-        lamp.src="../img/white_lamp.png";
-    }else{
-        lamp.src="../img/yellow_lamp.png";
-    }
-    if(button.textContent ==="accendi"){
-        button.innerText = "spegni"; 
-    }else{
-        button.innerText = "accendi"; 
-    }
+    changeImg();
+    changeButton();
 })
+
+    function changeImg(){
+        if(lamp.src ==="http://127.0.0.1:5501/img/yellow_lamp.png"){
+            lamp.src="../img/white_lamp.png";
+        }else{
+            lamp.src="../img/yellow_lamp.png";
+        }
+    }
+    function changeButton(){
+        if(button.textContent ==="accendi"){
+            button.innerText = "spegni"; 
+        }else{
+            button.innerText = "accendi"; 
+        }
+    }
 
 // button.addEventListener('click',function(){ 
 //     let flag =true;
