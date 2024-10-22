@@ -19,12 +19,12 @@ button.addEventListener("click", function () {
   if (lampFlag) {
     //se lampadina è accesa, al click
     lampFlag = false; //allora la spegniamo
-    lamp.src = "../img/white_lamp.png"; //cambiamo immagine mettendo quella spenta
+    lamp.src = "./img/white_lamp.png"; //cambiamo immagine mettendo quella spenta
     button.innerText = "Accendi"; //cambiamo la scritta del bottone in "Accendi"
   } else {
     // altriementi se è spenta, al click
     lampFlag = true; //la accendiamo
-    lamp.src = "../img/yellow_lamp.png"; //cambiamo immagine mettendo quella accesa
+    lamp.src = "./img/yellow_lamp.png"; //cambiamo immagine mettendo quella accesa
     button.innerText = "Spegni"; //cambiamo la scritta del bottone in "Spegni"
   }
 });
